@@ -1,0 +1,5 @@
+pt-BR:
+  activerecord:
+    errors:
+      messages:
+        invalid_cpf: 'não é um CPF válido'
