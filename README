@@ -1,0 +1,19 @@
+ValidateAsCpf
+=============
+
+This is a refactoring with i18n support of original plugin made by OSS:
+
+https://projetos.ossystems.com.br/projects/plugonrails/repository/browse/plugins/validates_as_cpf
+
+
+Note this plugin only work on Rails >= 2.3
+
+
+Example
+=======
+
+class Person < ActiveRecord::Base
+  validates_as_cpf :cpf
+end
+
+Copyright (c) 2009 Gabriel Sobrinho, released under the MIT license
