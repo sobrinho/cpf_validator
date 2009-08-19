@@ -4,6 +4,9 @@ module CPF
     55555555555 66666666666 77777777777 88888888888 99999999999 00000000000)
 
   def self.valid? cpf
+    # Do not validate if blank
+    return true if cpf.blank?
+    
     # Parse CPF
     if cpf.kind_of? Numeric
       base10 = cpf.to_s(10)
