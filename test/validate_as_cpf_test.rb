@@ -6,3 +6,4 @@ class ValidatesAsCpfTest < ActiveSupport::TestCase
     assert true
   end
 end
+

@@ -3,3 +3,4 @@ en:
     errors:
       messages:
         invalid_cpf: 'is not a valid CPF'
+

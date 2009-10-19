@@ -6,11 +6,10 @@ module ActiveRecord
         configuration.update(attr_names.extract_options!)
 
         validates_each(attr_names, configuration) do |record, attr_name, value|
-          unless CPF::valid? value
-            record.errors.add attr_name, configuration[:message]
-          end
+          record.errors.add(attr_name, configuration[:message]) unless CPF.valid? value
         end
       end
     end
   end
 end
+

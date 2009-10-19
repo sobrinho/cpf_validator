@@ -3,3 +3,4 @@ pt-BR:
     errors:
       messages:
         invalid_cpf: 'não é um CPF válido'
+

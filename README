@@ -17,3 +17,4 @@ class Person < ActiveRecord::Base
 end
 
 Copyright (c) 2009 Gabriel Sobrinho, released under the MIT license
+

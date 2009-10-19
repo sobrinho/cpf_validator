@@ -6,7 +6,7 @@ module CPF
   def self.valid? cpf
     # Do not validate if blank
     return true if cpf.blank?
-    
+
     # Parse CPF
     if cpf.kind_of? Numeric
       base10 = cpf.to_s(10)
@@ -21,15 +21,11 @@ module CPF
     end
 
     # Basic validation
-    if cpf !~ /^\d{11}|\d{3}\.\d{3}\.\d{3}-\d{2}$/
-      return false
-    end
+    return false unless cpf =~ /^\d{11}|\d{3}\.\d{3}\.\d{3}-\d{2}$/
 
     cpf = cpf.scan(/\d/).collect(&:to_i)
 
-    if INVALIDS.member? cpf.to_s
-      return false
-    end
+    return false if INVALIDS.member? cpf.to_s
 
     # Parse first digit
     sum = (0..8).inject(0) do |sum, i|
@@ -54,3 +50,4 @@ module CPF
     return result == cpf[10]
   end
 end
+
