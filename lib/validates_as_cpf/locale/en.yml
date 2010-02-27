@@ -1,6 +1,0 @@
-en:
-  activerecord:
-    errors:
-      messages:
-        invalid_cpf: 'is not a valid CPF'
-

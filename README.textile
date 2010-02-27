@@ -1,0 +1,17 @@
+h1. ValidatesAsCpf
+
+This plugin is a rework of original validates_as_cpf created by OSS. You can see it "here":https://projetos.ossystems.com.br/projects/plugonrails/repository/browse/plugins/validates_as_cpf
+
+h2. Installation
+
+<pre>rails plugin install git://github.com/sobrinho/validates_as_cpf.git</pre>
+
+h2. Usage
+
+<pre>class Person < ActiveRecord::Base
+  validates :document, :cpf => true
+end</pre>
+
+h2. License
+
+Copyright (c) 2009-2010 Gabriel Sobrinho, released under the MIT license
