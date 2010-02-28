@@ -1,10 +1,18 @@
 h1. ValidatesAsCpf
 
-This plugin is a rework of original validates_as_cpf created by OSS. You can see it "here":https://projetos.ossystems.com.br/projects/plugonrails/repository/browse/plugins/validates_as_cpf
+This gem is based on *OSS* works in "https://projetos.ossystems.com.br/projects/plugonrails/repository/browse/plugins/validates_as_cpf":https://projetos.ossystems.com.br/projects/plugonrails/repository/browse/plugins/validates_as_cpf.
 
 h2. Installation
 
+You can install as gem:
+
+<pre>gem "validates_as_cpf"</pre>
+
+Or as plugin:
+
 <pre>$ rails plugin install git://github.com/sobrinho/validates_as_cpf.git</pre>
+
+h3. Rails 2.3
 
 See "here":http://github.com/sobrinho/validates_as_cpf/tree/2.3 for older versions of Rails.
 
