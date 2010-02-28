@@ -4,7 +4,9 @@ This plugin is a rework of original validates_as_cpf created by OSS. You can see
 
 h2. Installation
 
-<pre>rails plugin install git://github.com/sobrinho/validates_as_cpf.git</pre>
+<pre>$ rails plugin install git://github.com/sobrinho/validates_as_cpf.git</pre>
+
+See "here":http://github.com/sobrinho/validates_as_cpf/tree/2.3 for older versions of Rails.
 
 h2. Usage
 
