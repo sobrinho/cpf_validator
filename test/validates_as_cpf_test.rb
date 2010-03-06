@@ -6,14 +6,14 @@ class ValidatesAsCpfTest < ActiveSupport::TestCase
   end
   
   test "blank values" do
-    assert_equal false, Person.new(:document => '').valid?
-    assert_equal false, Person.new(:document => false).valid?
-    assert_equal false, Person.new(:document => nil).valid?
+    ['', false, nil].each do |cpf|
+      assert Person.new(:document => cpf).invalid?
+    end
   end
   
   test "black list" do
     CPF::BLACK_LIST.each do |cpf|
-      assert_equal false, Person.new(:document => cpf).valid?
+      assert Person.new(:document => cpf).invalid?
     end
   end
   
