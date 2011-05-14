@@ -1,18 +1,9 @@
 require 'rubygems'
 require 'test/unit'
-require 'active_support'
-require 'active_record'
-require 'validates_as_cpf/cpf_validator'
-require 'validates_as_cpf/cpf'
+require 'active_model'
+require 'cpf_validator'
 
-# create a temporary database
-ActiveRecord::Base.establish_connection :adapter => 'sqlite3', :database => ':memory:'
-
-silence_stream(STDOUT) do
-  ActiveRecord::Schema.define do
-    create_table :people do |t|
-      t.string :name
-      t.string :document
-    end
-  end
+class Document < Struct.new(:number)
+  include ActiveModel::Validations
+  validates :number, :cpf => true
 end
