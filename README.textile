@@ -1,10 +1,8 @@
 h1. ValidatesAsCpf
 
-This gem is based on *OSS* works in "https://projetos.ossystems.com.br/projects/plugonrails/repository/browse/plugins/validates_as_cpf":https://projetos.ossystems.com.br/projects/plugonrails/repository/browse/plugins/validates_as_cpf
+This project is based on O.S. Systems works "here":https://projetos.ossystems.com.br/projects/plugonrails/repository/browse/plugins/validates_as_cpf
 
 h2. Installation
-
-You can install as gem:
 
 <pre>gem "validates_as_cpf"</pre>
 
