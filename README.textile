@@ -22,4 +22,4 @@ end</pre>
 
 h2. License
 
-Copyright (c) 2009-2010 Gabriel Sobrinho, released under the MIT license
+Copyright (c) 2009-2011 Gabriel Sobrinho, released under the MIT license
