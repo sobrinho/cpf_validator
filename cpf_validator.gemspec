@@ -1,14 +1,11 @@
 # -*- encoding: utf-8 -*-
-$:.push File.expand_path("../lib", __FILE__)
-require "cpf_validator/version"
-
 Gem::Specification.new do |s|
-  s.name        = "validates_as_cpf"
-  s.version     = CpfValidator::VERSION
+  s.name        = "cpf_validator"
+  s.version     = "0.2.0"
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Gabriel Sobrinho"]
   s.email       = ["gabriel.sobrinho@gmail.com"]
-  s.homepage    = "https://github.com/sobrinho/validates_as_cpf"
+  s.homepage    = "https://github.com/sobrinho/cpf_validator"
   s.summary     = %q{CPF validation for ActiveModel}
 
   s.files         = `git ls-files`.split("\n")
