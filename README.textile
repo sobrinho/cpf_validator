@@ -8,12 +8,6 @@ You can install as gem:
 
 <pre>gem "validates_as_cpf"</pre>
 
-Or as plugin:
-
-<pre>$ rails plugin install git://github.com/sobrinho/validates_as_cpf.git</pre>
-
-See "here":http://github.com/sobrinho/validates_as_cpf/tree/2.3 for older versions of Rails.
-
 h2. Usage
 
 <pre>class Person < ActiveRecord::Base
