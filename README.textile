@@ -1,10 +1,10 @@
-h1. ValidatesAsCpf
+h1. CpfValidator
 
-This project is based on O.S. Systems works "here":https://projetos.ossystems.com.br/projects/plugonrails/repository/browse/plugins/validates_as_cpf
+CPF validation for ActiveModel
 
 h2. Installation
 
-<pre>gem "validates_as_cpf"</pre>
+<pre>gem "cpf_validator"</pre>
 
 h2. Usage
 
