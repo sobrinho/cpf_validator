@@ -29,15 +29,15 @@ class CpfValidatorTest < Test::Unit::TestCase
 
   protected
 
-  def assert_valid(number)
-    assert document(number).valid?
+  def assert_valid(cpf)
+    assert person(:cpf => cpf).valid?
   end
 
-  def assert_invalid(number)
-    assert document(number).invalid?
+  def assert_invalid(cpf)
+    assert person(:cpf => cpf).invalid?
   end
 
-  def document(number)
-    Document.new(number)
+  def person(attributes = {})
+    Person.new(attributes)
   end
 end

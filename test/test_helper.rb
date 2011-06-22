@@ -2,8 +2,9 @@ require 'rubygems'
 require 'test/unit'
 require 'active_model'
 require 'cpf_validator'
+require 'ostruct'
 
-class Document < Struct.new(:number)
+class Person < OpenStruct
   include ActiveModel::Validations
-  validates :number, :cpf => true
+  validates :cpf, :cpf => true
 end
