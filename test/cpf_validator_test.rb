@@ -15,6 +15,12 @@ class CpfValidatorTest < Test::Unit::TestCase
     assert_invalid '234.624.576-57'
   end
 
+  def test_blank_values
+    assert_invalid ''
+    assert_invalid false
+    assert_invalid nil
+  end
+
   def test_masked
     assert_valid '262.249.648-66'
     assert_valid '124.713.257-93'
