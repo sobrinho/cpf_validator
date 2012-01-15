@@ -14,4 +14,4 @@ end</pre>
 
 h2. License
 
-Copyright (c) 2009-2011 Gabriel Sobrinho, released under the MIT license
+Copyright (c) 2009-2012 nohup brasil, released under the MIT license
