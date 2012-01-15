@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Gabriel Sobrinho"]
   s.email       = ["gabriel.sobrinho@gmail.com"]
-  s.homepage    = "https://github.com/sobrinho/cpf_validator"
+  s.homepage    = "https://github.com/nohupbrasil/cpf_validator"
   s.summary     = %q{CPF validation for ActiveModel}
 
   s.files         = `git ls-files`.split("\n")
