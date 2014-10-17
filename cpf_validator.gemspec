@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 Gem::Specification.new do |s|
   s.name        = "cpf_validator"
-  s.version     = "0.2.0"
+  s.version     = "0.2.1"
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Gabriel Sobrinho"]
   s.email       = ["gabriel.sobrinho@gmail.com"]
